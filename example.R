@@ -1,10 +1,9 @@
 ### Example codes to use 3D metric functions
 
 
-# set the working directory to where the .R files and the files folder are using setwd()
+# set the working directory to where the .R files and "files" folder are using setwd()
 
 library(raster)
-library(rgeos)
 library(sf)
 library(exactextractr)
 
