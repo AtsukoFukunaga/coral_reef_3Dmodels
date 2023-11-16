@@ -6,7 +6,6 @@
 get_fractal <- function(files, resolution = 0.01, max_agg_8 = FALSE) {
   
   require(raster)
-  require(rgeos)
   
   fractal <- list()
   
