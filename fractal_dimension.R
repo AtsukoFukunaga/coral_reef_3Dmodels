@@ -10,9 +10,9 @@ get_fractal <- function(files, resolution = 0.01, max_agg_8 = FALSE) {
   fractal <- list()
   
   if (max_agg_8) {
-    fac <- 16
-  } else {
     fac <- 8
+  } else {
+    fac <- 16
   }
   
   for (k in 1:length(files)) {
