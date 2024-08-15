@@ -27,6 +27,9 @@ It can process a series of DEM raster files. The function takes 3 arguments: fil
 <h3>surface_area.R</h3>
 This file contains a function that takes a DEM and converts it into raster with each cell containing a value of 3D surface area.<br>
 The function takes 2 arguments: ras = DEM raster file and res = DEM cell resolution, with default resolution of 0.01 (m). It can be used to calculate 3D surface area of each coral colony after digitizing the corresponding orthophotomosaic that aligns with the DEM.  See Jenness, 2004 for how 3D surface area is calculated.<br>
+<h3>volume_estimate.R</h3>
+This file contains a function that takes a DEM and converts it into raster with each cell containing a value of volume based on the (2d cell area) x (DEM elevation value of the cell - the minimum elevation value of the DEM).<br>
+The function takes 2 arguments: ras = DEM raster file and res = DEM cell resolution, with default resolution of 0.01 (m). It can be used to calculate the volume of each coral colony after digitizing the corresponding orthophotomosaic that aligns with the DEM.<br>
 <br>
 <h3>References</h3>
 <li>Horn, B.K.P. 1981. Hill shading and the reflectance map. Proceedings of the IEEE 69(1):14-47</li>
