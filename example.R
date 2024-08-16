@@ -246,7 +246,7 @@ volume <- features %>%
 volume
 
 # save as a csv file
-write.csv(volume, file = "coral_reef_3Dmodelsvolume.csv")
+write.csv(volume, file = "coral_reef_3Dmodels/volume.csv")
 
 rm(list = ls())
 
