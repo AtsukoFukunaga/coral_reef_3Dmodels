@@ -182,6 +182,8 @@ surf_area_ras <- surface_area_raster(ras, res = 0.01)
 # read a shapefile
 features <- st_zm(st_read('coral_reef_3Dmodels/files/PHR_080619PM_shapefiles/PHR_080619PM_digitized.shp'))
 # CRS should be 'NA'
+# if not, uncomment the following line to set CRS to 'NA'
+# st_crs(features) <- NA
 
 # visualize
 plot(ras)
@@ -227,6 +229,8 @@ volume_ras <- volume_estimate_raster(ras, res = 0.01)
 # read a shapefile
 features <- st_zm(st_read('coral_reef_3Dmodels/files/PHR_080619PM_shapefiles/PHR_080619PM_digitized.shp'))
 # CRS should be 'NA'
+# if not, uncomment the following line to set CRS to 'NA'
+# st_crs(features) <- NA
 
 # add planar surface area to polygons
 features$area_2d <- as.numeric(st_area(features))
